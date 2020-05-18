@@ -8,6 +8,18 @@ Vue.config.productionTip = false
 
 
 new Vue({
+
+  data() {
+    return {
+      
+      cardId: 1,
+    };
+  },
+  methods: {
+    IdCounter() {
+      this.cardId++;
+    },
+  },
   router,
   render: h => h(App)
 }).$mount('#app')
