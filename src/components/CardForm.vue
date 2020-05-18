@@ -5,21 +5,21 @@
  <div class="field-card-number flex">
     <label class="baselabel">CARD NUMBER</label>
     <div class="basecontrol">
-      <input v-model="newCard.cardNumber" type="text" placeholder="card number">
+      <input v-model="card.cardNumber" type="text" placeholder="card number">
     </div>
  </div>
 
   <div class="field-cardholder-name flex">
     <label class="baselabel">CARDHOLDER NAME</label>
     <div class="basecontrol">
-      <input v-model="newCard.cardholderName" type="text" placeholder="FIRSTNAME LASTNAME">
+      <input v-model="card.cardholderName" type="text" placeholder="FIRSTNAME LASTNAME">
     </div>
  </div>
 
   <div class="field-card-valid-thru flex">
     <label class="baselabel">VALID THRU</label>
     <div class="basecontrol">
-      <input v-model="newCard.cardValidThru" type="text" placeholder="MM/YY">
+      <input v-model="card.cardValidThru" type="text" placeholder="MM/YY">
     </div>
  </div>
 
@@ -28,7 +28,7 @@
   <div class="field-card-ccv-code">
     <label class="baselabel">CCV</label>
     <div class="basecontrol">
-      <input v-model="newCard.cardCcvCode" type="text" placeholder="ccv code">
+      <input v-model="card.cardCcvCode" type="text" placeholder="ccv code">
     </div>
  </div>
 
@@ -41,14 +41,16 @@ export default {
 
     data() {
         return {
-           newCard:{}
+           
         }
     },
-    
+    props:{
+        card:Object
+    },
     methods: {
     },
     computed:{
-        
+
     }
 
 }
