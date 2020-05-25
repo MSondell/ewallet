@@ -9,6 +9,20 @@
 </template>
 
 <style lang="scss">
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(240, 240, 240);
+  width: 100vw;
+}
+
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

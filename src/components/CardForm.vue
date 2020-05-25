@@ -2,34 +2,24 @@
 
 <section class="card-form">
  
- <div class="field-card-number flex">
-    <label class="baselabel">CARD NUMBER</label>
-    <div class="basecontrol">
+ <div class="card-number flex">
+    <label>CARD NUMBER</label>
+
       <input v-model="card.cardNumber" type="text" placeholder="card number">
-    </div>
- </div>
+</div>
 
-  <div class="field-cardholder-name flex">
-    <label class="baselabel">CARDHOLDER NAME</label>
-    <div class="basecontrol">
+  <div class="cardholder-name flex">
+    <label>CARDHOLDER NAME</label>
       <input v-model="card.cardholderName" type="text" placeholder="FIRSTNAME LASTNAME">
-    </div>
  </div>
 
-  <div class="field-card-valid-thru flex">
-    <label class="baselabel">VALID THRU</label>
-    <div class="basecontrol">
+  <div class="card-valid-thru flex">
+    <label>VALID THRU</label>
       <input v-model="card.cardValidThru" type="text" placeholder="MM/YY">
-    </div>
  </div>
-
-
- 
-  <div class="field-card-ccv-code">
-    <label class="baselabel">CCV</label>
-    <div class="basecontrol">
+  <div class="card-ccv-code flex">
+    <label>CCV</label>
       <input v-model="card.cardCcvCode" type="text" placeholder="ccv code">
-    </div>
  </div>
 
 
@@ -56,6 +46,33 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.card-form{
+margin-top: 2rem;
+margin-bottom: 1rem;
+    min-width: 80vw;
+    max-width: 396px;
 
+
+input{
+  box-sizing: border-box;
+  
+}
+  .flex {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    input {
+      width:100%;
+      height: 2rem;
+      background: rgb(240, 240, 240);
+      border: 0.1rem solid black;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      
+    }
+  }
+  }
 </style>

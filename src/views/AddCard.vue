@@ -1,11 +1,12 @@
 <template>
-<div>
-  <!-- <card : card="placeholderCard" addCard/> -->
+<div class="add-card">
+  <top :header="'ADD A NEW BANK CARD'" addCard/>
   <card :card="card"/>
   <cardForm :card="card"/>
 </div>
 </template>
 <script>
+import Top from "../components/Top.vue"
 import CardForm from "../components/CardForm.vue"
 import Card from "../components/Card.vue"
 export default {
@@ -21,13 +22,14 @@ export default {
   },
    
    components: {
+        top: Top,
         cardForm: CardForm,
         card: Card
     },
     
     data() {
     return {
-      // cardArray: [],
+    
       card: {
         id: 0,
         cardholderName: "FIRSTNAME LASTNAME",
@@ -35,6 +37,8 @@ export default {
         cardNumber: "",
         isActive: false,
         color: "#fff",
+        vendor: "vendor-bitcoin.svg",
+        chip: "chip-dark.svg",
         blipDark: false,
       }
       ,
@@ -43,9 +47,15 @@ export default {
   }
 
 }
-
 </script>
 
-<style>
+<style lang="scss" scoped>
+.add-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width:90vw;
 
+}
 </style>
+

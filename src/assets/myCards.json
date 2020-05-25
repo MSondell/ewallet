@@ -1,0 +1,48 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "name": "MIKAEL SONDELL",
+            "valid": "04/23",
+            "cardNumber": "1234 5678 9999 1111",
+            "isActive": true,
+            "color": "blue",
+            "nfcDark": true,
+            "chipDark": true,
+            "vendor": "bitcoin"
+        },
+        {
+            "id": 2,
+            "name": "ERIK ERIKSSON",
+            "valid": "01/23",
+            "cardNumber": "2334 5678 9999 4444",
+            "isActive": false,
+            "color": "yellow",
+            "nfcDark": false,
+            "chipDark": false,
+            "vendor": "ninja"
+        },
+        {
+            "id": 3,
+            "name": "MARCUS SONDELL",
+            "valid": "03/22",
+            "cardNumber": "1234 2342 2222 3211",
+            "isActive": false,
+            "color": "red",
+            "nfcDark": false,
+            "chipDark": false,
+            "vendor": "evil"
+        },
+        {
+            "id": 4,
+            "name": "LENA SONDELL",
+            "valid": "01/23",
+            "cardNumber": "1234 2342 2222 3222",
+            "isActive": false,
+            "color": "red",
+            "nfcDark": false,
+            "chipDark": false,
+            "vendor": "ninja"
+        }
+    ]
+}
